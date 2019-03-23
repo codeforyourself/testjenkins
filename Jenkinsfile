@@ -14,7 +14,7 @@ node {
     def resourceGroup = 'test1jenkins' 
   
     // login Azure
-    withCredentials([azureServicePrincipal('<mySrvPrincipal>')]) {
+    withCredentials([azureServicePrincipal('18a23a03-7914-4a1a-9b67-ba14f667bdd2')]) {
       sh '''
         az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET -t $AZURE_TENANT_ID
         az account set -s $AZURE_SUBSCRIPTION_ID

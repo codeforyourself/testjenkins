@@ -16,7 +16,7 @@ node {
     // login Azure
     withCredentials([azureServicePrincipal('18a23a03-7914-4a1a-9b67-ba14f667bdd2')]) {
       ansiblePlaybook installation: 'ansible',
-      playbook: 'webapp.yml'
+      playbook: 'VmCreatePlaybook.yml'
     }
    
     sh 'az logout'

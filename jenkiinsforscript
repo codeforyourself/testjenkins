@@ -19,7 +19,7 @@ node {
         az account set -s $AZURE_SUBSCRIPTION_ID
           chmod +x ./createVMSHScript.sh
           
-      ./createVMSHScript.sh -s $AZURE_SUBSCRIPTION_ID -r 'timepass' -l 'Central US'
+      ./createVMSHScript.sh -s $AZURE_SUBSCRIPTION_ID -r 'timepass2' -l 'CentralUS'
       '''
     }
    }
